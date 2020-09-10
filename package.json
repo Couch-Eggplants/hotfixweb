@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "",
-    "build": "npm i && npm start",
-    "surge-deploy": "npm run build && surge ./build --domain kozodoi-club-hack.surge.sh"
+    "start": "cross-env PORT=10888 react-scripts start",
+    "build": "react-scripts build",
+    "surge-deploy": "npm run build && surge ./build --domain sleepy-shore-06609.herokuapp.com"
   },
   "keywords": [],
   "author": "",
@@ -29,7 +29,6 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "cross-env": "^7.0.0",
     "react-router": "^5.1.1",
     "react-router-dom": "^5.1.1"
   },
