@@ -63,7 +63,7 @@ const Basket = ({ match: { params: { areaId, itemId }}, foodAreas, order }) => {
         var tfaster = tempOrder['faster'] ? tempOrder['faster'] : true;
         setFaster(tfaster == "true" ? true : false);
         setSelfService(tselfService);
-        if (faster) {
+        if (!faster) {
           setTime(ttime);
         }
       }
