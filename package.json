@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env PORT=10888 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "surge-deploy": "npm run build && surge ./build --domain sleepy-shore-06609.herokuapp.com"
+    "deploy": "npm run build && surge ./build --domain sable-representative.surge.sh"
   },
   "keywords": [],
   "author": "",
